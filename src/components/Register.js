@@ -19,7 +19,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default submission
     try {
-      const response = await axios.post("http://localhost:3001/users/register/", formData);
+      const response = await axios.post("http://13.48.43.63:3001/users/register/", formData);
       console.log("Form data successfully submitted!!", response.data);
       setRes("Register Successful!! :)");
       setForm({
